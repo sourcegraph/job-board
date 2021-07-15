@@ -199,9 +199,10 @@ h5 {
 
 .button,
 .accessible #submit_app,
-.accessible #apply_button {
-  color: var(--btn-text);
-  background: var(--btn-bg);
+.accessible #apply_button,
+.attach-or-paste .link-container a {
+  color: var(--btn-text) !important;
+  background: var(--btn-bg) !important;
   --outline-color: var(--btn-bg);
   font-family: var(--font-family) !important;
   font-size: inherit;
@@ -210,8 +211,9 @@ h5 {
 
 .button:hover,
 .accessible #submit_app:hover,
-.accessible #apply_button:hover {
-  background: var(--btn-hover-color);
+.accessible #apply_button:hover,
+.attach-or-paste .link-container a:hover {
+  background: var(--btn-hover-color) !important;
 }
 
 #app_body {
@@ -296,7 +298,7 @@ input[type="checkbox"] {
 }
 
 .grecaptcha-badge {
-  box-shadow: #ddd 0px 0px 20px !important;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 20px !important;
   border-radius: 0.5rem !important;
 }
 
