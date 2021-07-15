@@ -420,7 +420,7 @@ h2 > strong:first-child {
 #custom_fields #eeoc_fields div.field .select2-container-multi:focus {
   border: 1px solid var(--input-focus-border-color);
   box-shadow: var(--input-focus-box-shadow-parameters)
-    var(--input-focus-box-shadow);
+    var(--input-focus-box-shadow-color);
   outline: 2px solid transparent;
 }
 
