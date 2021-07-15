@@ -170,6 +170,8 @@ h6 {
 #application {
   background: var(--sg-light-gray);
   border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
 }
 
 #main_fields div.field label,
