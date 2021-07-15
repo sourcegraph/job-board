@@ -273,7 +273,7 @@ h5 {
 
 #main_fields {
   display: grid;
-  grid-template-columns: auto max-content;
+  grid-template-columns: auto minmax(auto, 100%);
   grid-row-gap: 1rem;
 }
 
@@ -309,6 +309,10 @@ h5 {
 
 #main_fields div.field {
   display: contents; /* Make children grid cells */
+}
+
+#main_fields label {
+  white-space: nowrap;
 }
 
 @media (max-width: 640px) {
