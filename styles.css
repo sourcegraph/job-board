@@ -371,6 +371,13 @@ input[type="checkbox"] {
   top: -0.15em;
 }
 
+#main_fields div.field,
+#custom_fields div.field,
+#demographic_questions div.field,
+#eeoc_fields div.field {
+  overflow: visible;
+}
+
 /* Fix empty space at bottom of page, caused by hidden form */
 .s3-upload-form {
   overflow: hidden;
