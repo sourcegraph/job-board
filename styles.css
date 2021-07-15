@@ -38,6 +38,8 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
 
   --box-bg: var(--sg-light-gray);
 
+  --hr-color: var(--sg-dark-gray);
+
   --input-bg: white;
   --input-border-color: #dbe2f0;
 
@@ -78,8 +80,9 @@ body {
   outline-color: var(--outline-color, var(--link-color));
 }
 
-hr {
-  background: var(--sg-dark-gray);
+hr,
+#main hr {
+  background: var(--hr-color);
 }
 
 /* #region Margins  */
