@@ -203,8 +203,7 @@ h5 {
 
 .button,
 .accessible #submit_app,
-.accessible #apply_button,
-.attach-or-paste .link-container a {
+.accessible #apply_button {
   color: var(--btn-text) !important;
   background: var(--btn-bg) !important;
   --outline-color: var(--btn-bg);
@@ -215,8 +214,7 @@ h5 {
 
 .button:hover,
 .accessible #submit_app:hover,
-.accessible #apply_button:hover,
-.attach-or-paste .link-container a:hover {
+.accessible #apply_button:hover {
   background: var(--btn-hover-color) !important;
 }
 
@@ -283,6 +281,19 @@ h5 {
 
 #main_fields div.field {
   display: contents; /* Make children grid cells */
+}
+
+@media (max-width: 640px) {
+  .attach-or-paste .link-container a {
+    color: var(--btn-text) !important;
+    background: var(--btn-bg) !important;
+    --outline-color: var(--btn-bg);
+    font-family: var(--font-family) !important;
+    font-size: inherit;
+    text-shadow: none !important;
+    border: none !important;
+    font-weight: inherit;
+  }
 }
 
 #main_fields div.field label,
