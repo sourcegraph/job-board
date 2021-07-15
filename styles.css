@@ -1,6 +1,6 @@
 /*
 
-Everything in this stylesheet follows our Brand Guidelines:
+Everything in this stylesheet aims to follow our Brand Guidelines as closely as possible:
 
 https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
 
@@ -33,8 +33,11 @@ ol {
 }
 /* #endregion */
 
+/* Note: all headings are intentionally exactly one level smaller than in the Brand content guideline, because the
+specified font sizes for each level look too large on the career pages. */
+
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 200;
 }
 
@@ -45,19 +48,19 @@ h5 {
   font-weight: 600 !important;
 }
 
-h2 {
+h3 {
   font-size: 3rem !important;
 }
 
-h3 {
+h4 {
   font-size: 1.875rem !important;
 }
 
-h4 {
+h5 {
   font-size: 1.5rem !important;
 }
 
-h5 {
+h6 {
   font-size: 1.25rem !important;
 }
 
@@ -122,16 +125,8 @@ h5 {
 #app_body h1.app-title {
   font-size: 2.5rem;
   line-height: 1.3;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 }
-
-/* The default h2 style is too large, make it look like h3 */
-#app_body h2 {
-  font-size: 1.875rem !important;
-}
-/* #endregion */
-
-/* #region Application form */
 
 #main_fields div.field label,
 #custom_fields div.field label,
