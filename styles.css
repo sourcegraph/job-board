@@ -64,6 +64,7 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
     --input-border-color: #343a4d;
     --input-focus-border-color: #4393e7;
     --input-focus-box-shadow-color: #0f59aa;
+    --text-muted-color: #a6b6d9;
 
     /* Query parameter is only for cache busting, workaround for Chromium bug which doesn't reevaluate media query inside the SVG */
     --logo-full-url: url(./logos/full.svg?dark);
