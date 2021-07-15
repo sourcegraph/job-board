@@ -37,6 +37,10 @@ ul,
 ol {
   margin: 0.4em 0;
 }
+
+li {
+  margin-bottom: 0.3em;
+}
 /* #endregion */
 
 /* Note: all headings are intentionally exactly one level smaller than in the Brand content guideline, because the
