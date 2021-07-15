@@ -10,9 +10,8 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
 
 :root {
   --font-family: "Source Sans Pro", sans-serif;
-  --body-bg: white;
-  --text-color: #343a4d;
 
+  /* Brand guideline colors */
   --sg-light-gray: #f4f7fb;
   --sg-dark-gray: #6c757d;
   --sg-space-black: #000000;
@@ -22,18 +21,25 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
   --sg-plum-3: #5033e1;
   --sg-plum-4: #3826cc;
 
+  /* Dynamic color scheme colors */
+  --body-bg: white;
+  --text-color: #343a4d;
+
   --link-color: #0b70db;
 
   --btn-text: white;
   --btn-bg: var(--sg-plum-3);
   --btn-hover-color: var(--sg-plum-4);
 
+  --box-bg: var(--sg-light-gray);
+
   color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-bg: #181b26;
+    --body-bg: #14171f;
+    --box-bg: #181b26;
     --text-color: #dbe2f0;
 
     color-scheme: dark;
