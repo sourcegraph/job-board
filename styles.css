@@ -24,6 +24,7 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
   /* Dynamic color scheme colors */
   --body-bg: white;
   --text-color: #343a4d;
+  --text-muted-color: var(--sg-light-gray);
 
   --link-color: #0b70db;
 
@@ -41,6 +42,7 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
     --body-bg: #14171f;
     --box-bg: #181b26;
     --text-color: #dbe2f0;
+    --text-muted-color: var(--sg-dark-gray);
 
     color-scheme: dark;
   }
@@ -136,6 +138,10 @@ h5 {
 #footer {
   background-color: transparent;
   border-top: none;
+}
+
+.location {
+  color: var(--text-muted-color);
 }
 
 /* #region Use SVG logo including company name */
