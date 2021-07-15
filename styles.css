@@ -186,7 +186,6 @@ h5 {
 
   /* Use fixed height to avoid layout shift as SVG loads */
   height: 3.5rem;
-  overflow: hidden;
 }
 /* #endregion */
 
@@ -226,6 +225,7 @@ h5 {
   content: url(./logos/mark.svg);
   display: block;
   width: 2rem;
+  height: 2rem;
 }
 
 #app_body #logo {
