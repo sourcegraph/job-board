@@ -16,6 +16,10 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
   --sg-dark-gray: #6c757d;
   --sg-space-black: #000000;
 
+  --sg-vivid-violet: #a112ff;
+  --sg-vermillion: #ff5543;
+  --sg-sky-blue: #00cbec;
+
   --sg-plum-1: #bfbfff;
   --sg-plum-2: #6b59ed;
   --sg-plum-3: #5033e1;
@@ -239,6 +243,13 @@ h5 {
 
 #application div.required-fields {
   color: inherit;
+}
+
+#main_fields .asterisk,
+#custom_fields .asterisk,
+#demographic_questions .asterisk,
+#eeoc_fields .asterisk {
+  color: var(--sg-vermillion);
 }
 
 #main_fields div.field label,
