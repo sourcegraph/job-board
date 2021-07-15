@@ -55,6 +55,37 @@ h5 {
   font-weight: normal !important;
 }
 
+/* Use SVG logo including company name */
+
+/* Hide but leave visible for screen readers for the alt text */
+#logo > img {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+/* Add SVG logo as pseudo element */
+#logo::after {
+  content: url(https://sourcegraph.com/.assets/img/sourcegraph-light-head-logo.svg);
+  display: block;
+  width: 20rem;
+}
+
+#main > #logo {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
 #board_title {
   margin-top: 2rem;
+}
+
+/* Sourcegraph title replaced by SVG logo */
+#main > h1 {
+  display: none;
 }
