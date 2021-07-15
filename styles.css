@@ -294,4 +294,10 @@ input[type="checkbox"] {
 .s3-upload-form {
   overflow: hidden;
 }
+
+.grecaptcha-badge {
+  box-shadow: #ddd 0px 0px 20px !important;
+  border-radius: 0.5rem !important;
+}
+
 /* #endregion */
