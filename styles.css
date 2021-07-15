@@ -315,6 +315,11 @@ h5 {
   white-space: nowrap;
 }
 
+#main_fields div.field input[type="text"],
+#main_fields div.field textarea {
+  width: auto;
+}
+
 @media (max-width: 640px) {
   .attach-or-paste .link-container a {
     color: var(--btn-text) !important;
