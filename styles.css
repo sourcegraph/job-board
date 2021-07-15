@@ -87,3 +87,27 @@ h5 {
 #main > h1 {
   display: none;
 }
+
+/* Applications  */
+
+#app_body {
+  max-width: 85ch;
+}
+
+#app_body #logo::after {
+  content: url(https://sourcegraph.com/.assets/img/sourcegraph-mark.svg);
+  display: block;
+  width: 2rem;
+}
+
+/* The default h1 style is too large for job titles */
+.app-title {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+/* The default h2 style is too large, make it look like h3 */
+#app_body h2 {
+  font-size: 1.875rem;
+}
