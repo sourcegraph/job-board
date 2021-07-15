@@ -21,7 +21,9 @@
 
     /* React to dark theme */
     @media (prefers-color-scheme: dark) {
-      fill: white;
+      .text {
+        fill: white;
+      }
     }
   </style>
   <g>
