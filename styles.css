@@ -64,19 +64,15 @@ h5 {
 }
 
 h3 {
-  font-size: 3rem !important;
-}
-
-h4 {
-  font-size: 1.875rem !important;
-}
-
-h5 {
   font-size: 1.5rem !important;
 }
 
-h6 {
+h4 {
   font-size: 1.25rem !important;
+}
+
+h5 {
+  font-size: 1rem !important;
 }
 
 /* Override */
