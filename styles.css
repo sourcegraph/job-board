@@ -234,6 +234,20 @@ h5 {
   overflow: hidden;
 }
 
+/* Make logo spin on hover */
+@keyframes spin {
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(180deg) scale(1);
+  }
+}
+
+#app_body #logo:hover::after {
+  animation: spin 0.5s ease-in-out 1;
+}
+
 /* The default h1 style is too large for job titles */
 #app_body h1.app-title {
   font-size: 2.5rem;
