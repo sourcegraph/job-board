@@ -12,6 +12,11 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
   --font-family: "Source Sans Pro", sans-serif;
 
   --sg-light-gray: #f4f7fb;
+  --sg-dark-gray: #6c757d;
+  --sg-space-black: #000000;
+
+  --sg-plum-1: #bfbfff;
+  --sg-plum-2: #6b59ed;
   --sg-plum-3: #5033e1;
   --sg-plum-4: #3826cc;
 
@@ -24,6 +29,16 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 1.5;
+}
+
+:focus-visible {
+  outline-offset: 2px;
+  outline-width: 2px;
+  outline-color: var(--sg-plum-3);
+}
+
+hr {
+  background: var(--sg-dark-gray);
 }
 
 /* #region Margins  */
