@@ -59,6 +59,10 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: var(--font-family);
@@ -246,15 +250,35 @@ h5 {
   padding: 2rem;
 }
 
-#application div.required-fields {
-  color: inherit;
-}
-
 #main_fields .asterisk,
 #custom_fields .asterisk,
 #demographic_questions .asterisk,
 #eeoc_fields .asterisk {
   color: var(--sg-vermillion);
+}
+
+/* Use a properly aligned CSS grid instead of float-based layout with fixed px */
+
+#main_fields {
+  display: grid;
+  grid-template-columns: auto max-content;
+  grid-row-gap: 1rem;
+}
+
+#main_fields > .heading {
+  grid-column: span 2;
+  margin-bottom: 0;
+}
+
+#application div.required-fields {
+  grid-column: span 2;
+  text-align: right;
+  font-size: 0.75rem;
+  color: inherit;
+}
+
+#main_fields div.field {
+  display: contents; /* Make children grid cells */
 }
 
 #main_fields div.field label,
