@@ -42,6 +42,9 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
 
   --input-bg: white;
   --input-border-color: #dbe2f0;
+  --input-focus-border-color: #0b70db;
+  --input-focus-box-shadow-color: #a3d0ff;
+  --input-focus-box-shadow: 0 0 0 0.125rem var(--input-focus-box-shadow-color);
 
   color-scheme: light dark;
 }
@@ -54,6 +57,8 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
     --link-color: #4393e7;
     --input-bg: #1d212f;
     --input-border-color: #343a4d;
+    --input-focus-border-color: #4393e7;
+    --input-focus-box-shadow: #0f59aa;
 
     color-scheme: dark;
   }
@@ -370,6 +375,30 @@ h5 {
   border: 1px solid var(--input-border-color);
   background: var(--input-bg);
   font-size: inherit;
+}
+
+#main_fields div.field input[type="text"]:focus,
+#main_fields div.field textarea:focus,
+#main_fields div.field .text-field:focus,
+#main_fields #custom_fields div.field .select2-container-multi:focus,
+#custom_fields #main_fields div.field .select2-container-multi:focus,
+#custom_fields div.field input[type="text"]:focus,
+#custom_fields div.field textarea:focus,
+#custom_fields div.field .text-field:focus,
+#custom_fields div.field .select2-container-multi:focus,
+#demographic_questions div.field input[type="text"]:focus,
+#demographic_questions div.field textarea:focus,
+#demographic_questions div.field .text-field:focus,
+#demographic_questions #custom_fields div.field .select2-container-multi:focus,
+#custom_fields #demographic_questions div.field .select2-container-multi:focus,
+#eeoc_fields div.field input[type="text"]:focus,
+#eeoc_fields div.field textarea:focus,
+#eeoc_fields div.field .text-field:focus,
+#eeoc_fields #custom_fields div.field .select2-container-multi:focus,
+#custom_fields #eeoc_fields div.field .select2-container-multi:focus {
+  border: 1px solid var(--input-focus-border-color);
+  box-shadow: var(--input-focus-box-shadow);
+  outline: 2px solid transparent;
 }
 
 input[type="checkbox"] {
