@@ -25,22 +25,23 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3rem !important;
 }
+
 h3 {
-  font-size: 1.875rem;
+  font-size: 1.875rem !important;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 /* Override */
@@ -50,16 +51,6 @@ h5 {
 
 /* Workaround for non-semantic intro */
 #content h3 {
-  font-size: 1rem;
-  font-weight: normal;
-}
-
-/* Override */
-.accessible .level-0 h2,
-.accessible .level-0 h3,
-.accessible .level-0 h4,
-.accessible .level-0 h5,
-.accessible .level-0 h6 {
-  font-size: revert;
-  font-weight: revert;
+  font-size: 1rem !important;
+  font-weight: normal !important;
 }
