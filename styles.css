@@ -177,7 +177,7 @@ h5 {
 }
 
 #main > #logo {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
 
   /* Use fixed height to avoid layout shift as SVG loads */
