@@ -12,6 +12,11 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
   --font-family: "Source Sans Pro", sans-serif;
 
   --sg-light-gray: #f4f7fb;
+  --sg-plum-3: #5033e1;
+  --sg-plum-4: #3826cc;
+
+  --btn-color: var(--sg-plum-3);
+  --btn-hover-color: var(--sg-plum-4);
 }
 
 html,
@@ -121,6 +126,20 @@ h6 {
 
 /* #region Applications  */
 
+.button,
+.accessible #submit_app,
+.accessible #apply_button {
+  background: var(--btn-color);
+  font-family: var(--font-family) !important;
+  text-shadow: none !important;
+}
+
+.button:hover,
+.accessible #submit_app:hover,
+.accessible #apply_button:hover {
+  background: var(--btn-hover-color);
+}
+
 #app_body {
   max-width: 85ch;
 }
@@ -149,11 +168,6 @@ h6 {
 #eeoc_fields div.field label {
   /* Increase font size */
   font-size: 0.875rem;
-}
-
-#submit_app {
-  font-family: var(--font-family);
-  text-shadow: none;
 }
 
 /* Fix empty space at bottom of page, caused by hidden form */
