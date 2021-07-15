@@ -154,6 +154,11 @@ h5 {
   font-size: 1rem !important;
 }
 
+/* Somehow Greenhouse adds <strong> tags to every <h2> heading */
+h2 > strong:first-child {
+  font-weight: inherit;
+}
+
 /* Override */
 .accessible #content {
   line-height: inherit;
