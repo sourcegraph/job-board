@@ -34,6 +34,9 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
 
   --box-bg: var(--sg-light-gray);
 
+  --input-bg: white;
+  --input-border-color: #dbe2f0;
+
   color-scheme: light dark;
 }
 
@@ -43,6 +46,8 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
     --box-bg: #181b26;
     --text-color: #dbe2f0;
     --text-muted-color: var(--sg-dark-gray);
+    --input-bg: #1d212f;
+    --input-border-color: #343a4d;
 
     color-scheme: dark;
   }
@@ -235,6 +240,29 @@ h5 {
 #eeoc_fields div.field label {
   /* Increase font size */
   font-size: 0.875rem;
+}
+
+#main_fields div.field input[type="text"],
+#main_fields div.field textarea,
+#main_fields div.field .text-field,
+#main_fields #custom_fields div.field .select2-container-multi,
+#custom_fields #main_fields div.field .select2-container-multi,
+#custom_fields div.field input[type="text"],
+#custom_fields div.field textarea,
+#custom_fields div.field .text-field,
+#custom_fields div.field .select2-container-multi,
+#demographic_questions div.field input[type="text"],
+#demographic_questions div.field textarea,
+#demographic_questions div.field .text-field,
+#demographic_questions #custom_fields div.field .select2-container-multi,
+#custom_fields #demographic_questions div.field .select2-container-multi,
+#eeoc_fields div.field input[type="text"],
+#eeoc_fields div.field textarea,
+#eeoc_fields div.field .text-field,
+#eeoc_fields #custom_fields div.field .select2-container-multi,
+#custom_fields #eeoc_fields div.field .select2-container-multi {
+  border: 1px solid var(--input-border-color);
+  background: var(--input-bg);
 }
 
 /* Fix empty space at bottom of page, caused by hidden form */
