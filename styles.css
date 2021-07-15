@@ -31,7 +31,6 @@ h5 {
 h2 {
   font-size: 3rem;
 }
-
 h3 {
   font-size: 1.875rem;
 }
@@ -53,4 +52,14 @@ h5 {
 #content h3 {
   font-size: 1rem;
   font-weight: normal;
+}
+
+/* Override */
+.accessible .level-0 h2,
+.accessible .level-0 h3,
+.accessible .level-0 h4,
+.accessible .level-0 h5,
+.accessible .level-0 h6 {
+  font-size: revert;
+  font-weight: revert;
 }
