@@ -296,6 +296,13 @@ h5 {
   }
 }
 
+#custom_fields div.field input[type="text"],
+#custom_fields div.field textarea,
+#custom_fields div.field .text-field,
+#custom_fields div.field .select2-container-multi {
+  width: 100%;
+}
+
 #main_fields div.field label,
 #custom_fields div.field label,
 #demographic_questions div.field label,
@@ -325,6 +332,7 @@ h5 {
 #custom_fields #eeoc_fields div.field .select2-container-multi {
   border: 1px solid var(--input-border-color);
   background: var(--input-bg);
+  font-size: inherit;
 }
 
 input[type="checkbox"] {
