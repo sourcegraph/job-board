@@ -244,7 +244,6 @@ h5 {
 #app_body #logo {
   /* Use fixed height to avoid layout shift as SVG loads */
   height: 2.5rem;
-  overflow: hidden;
 }
 
 /* Make logo spin on hover */
