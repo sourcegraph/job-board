@@ -286,6 +286,10 @@ h5 {
   background: var(--input-bg);
 }
 
+input[type="checkbox"] {
+  top: -0.15em;
+}
+
 /* Fix empty space at bottom of page, caused by hidden form */
 .s3-upload-form {
   overflow: hidden;
