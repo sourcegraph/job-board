@@ -329,6 +329,12 @@ h5 {
   white-space: nowrap;
 }
 
+/* Align below input using grid, instead of hardcoded padding-left */
+#main_fields .field-error-msg {
+  grid-column: 2;
+  padding-left: 0;
+}
+
 #main_fields div.field input[type="text"],
 #main_fields div.field textarea {
   width: auto;
