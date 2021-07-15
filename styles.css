@@ -10,6 +10,8 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
 
 :root {
   --font-family: "Source Sans Pro", sans-serif;
+  --body-bg: white;
+  --text-color: #343a4d;
 
   --sg-light-gray: #f4f7fb;
   --sg-dark-gray: #6c757d;
@@ -22,8 +24,20 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
 
   --link-color: #0b70db;
 
-  --btn-color: var(--sg-plum-3);
+  --btn-text: white;
+  --btn-bg: var(--sg-plum-3);
   --btn-hover-color: var(--sg-plum-4);
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #181b26;
+    --text-color: #dbe2f0;
+
+    color-scheme: dark;
+  }
 }
 
 html,
@@ -31,6 +45,8 @@ body {
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 1.5;
+  background: var(--body-bg);
+  color: var(--text-color);
 }
 
 :any-link {
@@ -154,7 +170,8 @@ h5 {
 .button,
 .accessible #submit_app,
 .accessible #apply_button {
-  background: var(--btn-color);
+  color: var(--btn-text);
+  background: var(--btn-bg);
   font-family: var(--font-family) !important;
   text-shadow: none !important;
 }
