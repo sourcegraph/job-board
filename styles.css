@@ -103,7 +103,7 @@ h6 {
 }
 
 /* Add SVG logo as pseudo element */
-#logo::after {
+#main > #logo::after {
   content: url(https://sourcegraph.com/.assets/img/sourcegraph-light-head-logo.svg);
   display: block;
   width: 20rem;
@@ -112,6 +112,10 @@ h6 {
 #main > #logo {
   margin-bottom: 1rem;
   margin-top: 1rem;
+
+  /* Use fixed height to avoid layout shift as SVG loads */
+  height: 3.5rem;
+  overflow: hidden;
 }
 /* #endregion */
 
@@ -148,6 +152,12 @@ h6 {
   content: url(https://sourcegraph.com/.assets/img/sourcegraph-mark.svg);
   display: block;
   width: 2rem;
+}
+
+#app_body #logo {
+  /* Use fixed height to avoid layout shift as SVG loads */
+  height: 2.5rem;
+  overflow: hidden;
 }
 
 /* The default h1 style is too large for job titles */
