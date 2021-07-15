@@ -47,7 +47,7 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
   --input-border-color: #dbe2f0;
   --input-focus-border-color: #0b70db;
   --input-focus-box-shadow-color: #a3d0ff;
-  --input-focus-box-shadow: 0 0 0 0.125rem var(--input-focus-box-shadow-color);
+  --input-focus-box-shadow-parameters: 0 0 0 0.125rem;
 
   --logo-full-url: url(./logos/full.svg?light);
 
@@ -413,12 +413,15 @@ h5 {
 #eeoc_fields #custom_fields div.field .select2-container-multi:focus,
 #custom_fields #eeoc_fields div.field .select2-container-multi:focus {
   border: 1px solid var(--input-focus-border-color);
-  box-shadow: var(--input-focus-box-shadow);
+  box-shadow: var(--input-focus-box-shadow-parameters)
+    var(--input-focus-box-shadow);
   outline: 2px solid transparent;
 }
 
 .field-error {
   --input-focus-box-shadow-color: rgba(219, 42, 57, 0.2);
+  box-shadow: var(--input-focus-box-shadow-parameters)
+    var(--input-focus-border-color) !important;
 }
 
 .field-error-msg {
