@@ -65,12 +65,13 @@ body {
 
 :any-link {
   color: var(--link-color);
+  --outline-color: var(--link-color);
 }
 
 :focus-visible {
   outline-offset: 2px;
   outline-width: 2px;
-  outline-color: var(--sg-plum-3);
+  outline-color: var(--outline-color, var(--link-color));
 }
 
 hr {
@@ -195,6 +196,7 @@ h5 {
 .accessible #apply_button {
   color: var(--btn-text);
   background: var(--btn-bg);
+  --outline-color: var(--btn-bg);
   font-family: var(--font-family) !important;
   text-shadow: none !important;
 }
