@@ -133,6 +133,11 @@ h5 {
   font-weight: normal !important;
 }
 
+#footer {
+  background-color: transparent;
+  border-top: none;
+}
+
 /* #region Use SVG logo including company name */
 
 /* Hide but leave visible for screen readers for the alt text */
