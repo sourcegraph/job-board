@@ -158,7 +158,7 @@ h5 {
 
 /* Add SVG logo as pseudo element */
 #main > #logo::after {
-  content: url(https://sourcegraph.com/.assets/img/sourcegraph-light-head-logo.svg);
+  content: url(./logos/full.svg);
   display: block;
   width: 20rem;
 }
@@ -204,7 +204,7 @@ h5 {
 }
 
 #app_body #logo::after {
-  content: url(https://sourcegraph.com/.assets/img/sourcegraph-mark.svg);
+  content: url(./logos/mark.svg);
   display: block;
   width: 2rem;
 }
