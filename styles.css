@@ -330,9 +330,10 @@ h5 {
 }
 
 /* Align below input using grid, instead of hardcoded padding-left */
-#main_fields .field-error-msg {
+#main_fields div.field .field-error-msg {
   grid-column: 2;
   padding-left: 0;
+  margin-top: -0.5rem;
 }
 
 #main_fields div.field input[type="text"],
