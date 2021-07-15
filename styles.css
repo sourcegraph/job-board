@@ -414,6 +414,10 @@ h5 {
   --input-focus-box-shadow-color: rgba(219, 42, 57, 0.2);
 }
 
+.field-error-msg {
+  font-size: 0.875rem;
+}
+
 input[type="checkbox"] {
   top: -0.15em;
 }
