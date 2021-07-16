@@ -13,6 +13,7 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
 
 :root {
   --font-family: "Source Sans Pro", sans-serif;
+  --semi-bold: 600;
 
   /* Brand guideline colors */
   --sg-light-gray: #f4f7fb;
@@ -136,7 +137,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 600 !important;
+  font-weight: var(--semi-bold) !important;
 }
 
 h2 {
@@ -178,6 +179,10 @@ h2 > strong:first-child {
 
 .location {
   color: var(--text-muted-color);
+}
+
+.opening a {
+  font-weight: var(--semi-bold);
 }
 
 /* #region Use SVG logo including company name */
