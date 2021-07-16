@@ -50,8 +50,6 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
   --input-focus-box-shadow-color: #a3d0ff;
   --input-focus-box-shadow-parameters: 0 0 0 0.125rem;
 
-  --logo-full-url: url(./logos/full.svg?light);
-
   color-scheme: light dark;
 }
 
@@ -66,9 +64,6 @@ https://about.sourcegraph.com/handbook/marketing/brand/brand_guidelines
     --input-focus-border-color: #4393e7;
     --input-focus-box-shadow-color: #0f59aa;
     --text-muted-color: #a6b6d9;
-
-    /* Query parameter is only for cache busting, workaround for Chromium bug which doesn't reevaluate media query inside the SVG */
-    --logo-full-url: url(./logos/full.svg?dark);
 
     color-scheme: dark;
   }
@@ -199,9 +194,21 @@ h2 > strong:first-child {
 
 /* Add SVG logo as pseudo element */
 #main > #logo::after {
-  content: var(--logo-full-url);
+  content: url(./logos/full.svg?light);
   display: block;
   width: 20rem;
+}
+
+/*
+Note: We have to use a media query here instead of a CSS variable because Safari has a bug where if the CSS
+variable is a URL, it gets resolved relative to `location.href`, not relative to the stylesheet URL as it should.
+*/
+@media (prefers-color-scheme: dark) {
+  #main > #logo::after {
+    /* Query parameter is only for cache busting, workaround for Chromium bug which doesn't reevaluate the media
+    query inside the SVG automatically */
+    content: url(./logos/full.svg?dark);
+  }
 }
 
 #main > #logo {
