@@ -194,7 +194,7 @@ h2 > strong:first-child {
 
 /* Add SVG logo as pseudo element */
 #main > #logo::after {
-  content: url(./logos/full.svg?light);
+  content: url(./logos/full-light.svg);
   display: block;
   width: 20rem;
 }
@@ -205,9 +205,8 @@ variable is a URL, it gets resolved relative to `location.href`, not relative to
 */
 @media (prefers-color-scheme: dark) {
   #main > #logo::after {
-    /* Query parameter is only for cache busting, workaround for Chromium bug which doesn't reevaluate the media
-    query inside the SVG automatically */
-    content: url(./logos/full.svg?dark);
+    /* Browsers don't reevaluate the media query inside an SVG reliably, so swap it manually */
+    content: url(./logos/full-dark.svg);
   }
 }
 

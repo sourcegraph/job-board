@@ -16,14 +16,7 @@
     }
 
     .text {
-      fill: black;
-    }
-
-    /* React to dark theme */
-    @media (prefers-color-scheme: dark) {
-      .text {
-        fill: white;
-      }
+      fill: white;
     }
   </style>
   <g>
